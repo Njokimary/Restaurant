@@ -35,8 +35,33 @@ class Restaurant:
 
     def name(self):
         return self._name
+    
 # Create a restaurant object
 my_restaurant = Restaurant("Delicacy Restaurant")
 
 restaurant_name = my_restaurant.name()
 print("Restaurant name:", restaurant_name)
+    
+class Review:
+    def __init__(self, customer, restaurant, rating):
+        self.customer = customer
+        self.restaurant = restaurant
+        self.rating = rating
+
+    def rating(self):
+        return self.rating
+
+    def customer(self):
+        return self.customer
+
+    def restaurant(self):
+        return self.restaurant
+###test where the class is working 
+review1 = Review(customer1, my_restaurant, 14)
+review2 = Review(customer2, my_restaurant, 5)
+
+# access review attributes
+# access review attributes
+print(review1.customer.full_name()) 
+print(review1.restaurant.name()) 
+print(review1.rating)
